@@ -1,0 +1,56 @@
+.bolder{
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+.bound{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.gapping{
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+.animpart1 h1 {
+    display: inline-block;
+    margin-right: 82px;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+.animpart2 h1 {
+    display: inline-block;
+    margin-right: 82px;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.animpart3 h1 {
+    display: inline-block;
+    margin-right: 82px;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(-100% - 82px));
+
+    }
+    100% {
+        transform: translateX(0);
+
+    }
+}
